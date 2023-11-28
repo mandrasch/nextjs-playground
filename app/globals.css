@@ -26,3 +26,35 @@ body {
     )
     rgb(var(--background-start-rgb));*/
 }
+/* https://gsap.com/resources/React/#gsapcontext-is-your-best-friend */
+:root {
+  --dark: #1d1d1d;
+  --light: #fff;
+  --green: #28a92b;
+  --purple: #8d3dae;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--green);
+  font-weight: 600;
+  color: var(--light);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--purple);
+  font-weight: 600;
+  color: var(--light);
+}
