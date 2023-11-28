@@ -11,8 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 // TODO: use this https://gsap.com/resources/React/#gsapcontext-is-your-best-friend with scroll trigger?
 
 function ScrollAnimation() {
-  const app = useRef();
-  const circle = useRef();
+  const app = useRef<HTMLDivElement | null>(null);
+  const circle = useRef<HTMLDivElement | null>(null);
 
   // TODO: robust to use this instead of useLayoutEffect?
   // useGSAP will take care of removal, provided by @gsap/react (replacement for useLayoutEffect/useEffect)
