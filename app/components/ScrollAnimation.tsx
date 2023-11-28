@@ -24,7 +24,7 @@ function ScrollAnimation() {
       gsap.to(".box", {
         scrollTrigger: {
           trigger: ".box",
-          // start: "top top", // when the top of the trigger hits the top of the viewport
+          toggleActions: "play pause resume reset",
           markers: true,
         },
         x: 500,
@@ -38,7 +38,7 @@ function ScrollAnimation() {
   ); // <-- scope for selector text (optional)
 
   return (
-    <div ref={app} className="app mt-[200px]">
+    <div ref={app} className="app mt-[400px] mb-[400px]">
       <div className="box">Hello</div>
       <div className="circle" ref={circle}>
         Ref
