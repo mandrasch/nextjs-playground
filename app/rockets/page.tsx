@@ -1,7 +1,7 @@
 import React from "react";
 import { getClient } from "@/lib/client";
 import { gql } from "@apollo/client";
-import RocketCard from "@/app/components/RocketCard";
+import RocketCard from "@/components/RocketCard";
 
 export const revalidate = 5; // TODO:does it do something?!
 const query = gql`

@@ -42,4 +42,11 @@ npm i @gsap/react
 # https://www.apollographql.com/blog/apollo-client/next-js/how-to-use-apollo-client-with-next-js-13/
 npm install @apollo/client@rc @apollo/experimental-nextjs-app-support
 
+# add spline three fiber
+npm install three @types/three @react-three/fiber
+npm i @splinetool/r3f-spline @react-three/drei
+
+# add spline react (option B)
+npm i @splinetool/react-spline
+
 ```

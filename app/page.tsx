@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProductCard from "./components/ProductCard";
-import ScrollAnimation from "@/app/components/ScrollAnimation";
+import ProductCard from "../components/ProductCard";
+import ScrollAnimation from "@/components/ScrollAnimation";
 
 // https://gsap.com/resources/React/
 
