@@ -16,6 +16,9 @@ export default function Home() {
         <Link href="/users/" className="underline">
           Users
         </Link>
+        <Link href="/planet/" className="underline">
+          Planet
+        </Link>
       </div>
 
       <ProductCard></ProductCard>
