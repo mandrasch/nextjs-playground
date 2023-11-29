@@ -78,7 +78,7 @@ export default function App() {
       <div ref={app} className="app mt-[800px] mb-[800px]">
         <div className="hero-box">
           <h1 className="text-2xl">Hello, World</h1>
-          <p>(triggers "mouseHover" event)</p>
+          <p>(triggers &quot;mouseHover&quot; event)</p>
         </div>
       </div>
     </div>
