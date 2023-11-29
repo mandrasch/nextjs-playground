@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function App() {
   const spline = useRef();
 
-  function onLoad(splineApp) {
+  function onLoad(splineApp: any) {
     // save the app in a ref for later use
     spline.current = splineApp;
   }
@@ -37,10 +37,16 @@ export default function App() {
         // https://gsap.com/docs/v3/Plugins/ScrollTrigger/#config-object
 
         onEnter: (self) => {
-          console.log("on enter");
+          console.log("on enter", { spline });
 
+          if (!spline || !spline.current) {
+            console.error("No spline current");
+            return;
+          }
           // trigger spline animation from outside
           // https://github.com/splinetool/react-spline#trigger-spline-events-from-outside
+          // TODO: fix ts error
+          // @ts-ignore:next-line
           spline.current.emitEvent("mouseHover", "Sphere");
         },
 
@@ -72,7 +78,7 @@ export default function App() {
         scene="https://prod.spline.design/5erdviJULMjzZIys/scene.splinecode"
         onLoad={onLoad}
         // TODO: does not work?!
-        style={{ position: "fixed", "z-index": "-1", left: "0", top: "0" }}
+        style={{ position: "fixed", zIndex: "-1", left: "0", top: "0" }}
       />
 
       <div ref={app} className="app mt-[800px] mb-[800px]">
