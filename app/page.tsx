@@ -11,13 +11,10 @@ export default function Home() {
       <h1>Hello, NextJS!</h1>
       <div className="flex flex-row gap-2">
         <Link href="/rockets/" className="underline">
-          Rockets
+          Rockets (GraphQL)
         </Link>
-        <Link href="/users/" className="underline">
-          Users
-        </Link>
-        <Link href="/planet/" className="underline">
-          Planet
+        <Link href="/planet/" className="underline" scroll={false}>
+          Planet (spline)
         </Link>
       </div>
 
